@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS burbuja;
+
+USE burbuja;
+
+CREATE TABLE IF NOT EXISTS intentos_ordenamiento (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    intento TEXT NOT NULL,
+    resultados TEXT NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
